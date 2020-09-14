@@ -1,11 +1,14 @@
 import React from "react";
+import Banner from "../components/Banner";
 
 import "./Home.css";
 
 function Home() {
   return (
     <>
-      <div className="home"></div>
+      <div className="home">
+        <Banner />
+      </div>
     </>
   );
 }

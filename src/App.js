@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Views
 import Home from "./views/Home";
+import SearchPage from "./views/SearchPage";
 
 // Components
 import Header from "./components/Header";
@@ -16,9 +17,17 @@ function App() {
     <div className="app">
       <Router>
         <Header />
+
         <Switch>
-          <Home />
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
+
         <Footer />
       </Router>
     </div>
